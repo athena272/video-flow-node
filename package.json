@@ -1,8 +1,31 @@
 {
-	"dependencies": {
-		"json-server": "1.0.0-beta.15"
-	},
-	"scripts": {
-		"dev": "json-server --watch backend/videos.json"
-	}
+  "name": "video-flow-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "json-server --watch backend/videos.json",
+    "lint": "pnpm dlx eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.8.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "json-server": "1.0.0-beta.15"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.5.0",
+    "globals": "^17.6.0",
+    "prettier": "3.8.4"
+  }
 }
