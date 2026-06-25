@@ -1,32 +1,22 @@
 {
   "name": "video-flow-node",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "json-server --watch backend/videos.json",
-    "lint": "pnpm dlx eslint ."
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.8.0",
-      "onFail": "download"
-    }
-  },
+  "version": "0.0.0",
+  "private": true,
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "pnpm dlx eslint .",
+    "api": "json-server --watch backend/videos.json"
+  },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "eslint": "^10.5.0",
-    "globals": "^17.6.0",
     "json-server": "1.0.0-beta.15",
-    "prettier": "3.8.4"
+    "prettier": "3.8.4",
+    "vite": "^8.1.0"
   },
   "dependencies": {
-    "axios": "1.6.0"
+    "axios": "^1.18.1"
   }
 }
